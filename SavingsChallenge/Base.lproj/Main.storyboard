@@ -111,18 +111,52 @@
                     <view key="view" contentMode="scaleToFill" id="Kop-ni-Rat">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i6Y-tW-4iC">
+                                <rect key="frame" x="0.0" y="524" width="607" height="76"/>
+                                <color key="backgroundColor" red="0.4618577071151525" green="1" blue="0.52256312852023945" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="607" id="BwK-nf-hbi"/>
+                                    <constraint firstAttribute="height" constant="100" id="CrH-9f-Ykx"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="26" name="HelveticaNeue"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="bNb-cl-S5S" eventType="touchUpInside" id="Xvd-Ft-5WD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Savings Challenge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGX-7c-0sd">
+                                <rect key="frame" x="198" y="119" width="205" height="62"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="i6Y-tW-4iC" secondAttribute="centerX" id="Cvh-vK-zhg"/>
+                            <constraint firstItem="2W9-vZ-bUl" firstAttribute="top" secondItem="i6Y-tW-4iC" secondAttribute="bottom" id="ExY-12-Dy7"/>
+                            <constraint firstAttribute="centerX" secondItem="sGX-7c-0sd" secondAttribute="centerX" id="rco-wf-c1a"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BMh-LW-b9c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fR5-mV-jOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-826" y="-38"/>
+            <point key="canvasLocation" x="-810" y="-38"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
